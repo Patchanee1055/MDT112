@@ -11,14 +11,14 @@ namespace ConsoleApp2
             b = int.Parse(Console.ReadLine());
             x = a;
             y = b;
-            if (x == y)
-            {
-                Console.Write(x);
+            while (x != y)
+            { if (x < y) 
+                {
+                    x = x + a;
+                }
+                else { y = y + b; }
             }
-            else if (x < y) 
-            { x = x + a; 
-            }
-            else { y = y + b; }
+            Console.WriteLine(x);
         }
     }
 }
